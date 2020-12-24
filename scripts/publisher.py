@@ -8,7 +8,7 @@ def talker():
   rospy.init_node('talker', anonymous=True)
   rate = rospy.Rate(1) # 1hz
   while not rospy.is_shutdown():
-    string = "Kvashnina A.S."
+    string = "Usova A.S."
     rospy.loginfo(string)
     pub.publish(string)
     rate.sleep()
